@@ -3,7 +3,7 @@ export
 
 .PHONY : sales-ingest format
 
-sales-ingest:
+run:
 	poetry run python -m ingestion.pipeline \
 		--dataset_name $$DATASET_NAME \
 		--destination_folder $$DESTINATION_FOLDER \

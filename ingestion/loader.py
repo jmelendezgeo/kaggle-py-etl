@@ -44,6 +44,8 @@ def load_dataset_to_destination(
 ) -> str:
     """Carga el DataFrame a la base de datos DuckDB en MotherDuck."""
 
+    print(f"Dataset configurado para carga en {params.destination_loader}...")
+
     table_name = "sales_dataset"
 
     if "local" in params.destination_loader:
